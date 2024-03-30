@@ -699,7 +699,7 @@ class Mega:
         else:
             dest_path += '/'
 
-        output_path = pathlib.Path(dest_path + file_name)
+        output_path = Path(dest_path + file_name)
         with open(output_path, 'wb') as output_file:
             k_str = a32_to_str(k)
             counter = Counter.new(128,
